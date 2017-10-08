@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="output.css">
+  <title>傅式连连看</title>
+</head>
+<body>
+  <header>
+    <p>连连看</p>
+    <div id="toggle-btn"></div>
+  </header>
+  <main>
+    <canvas id="game-area"></canvas>
+    <div class="mask">
+      <p>请点击右上角继续游戏</p>
+    </div>
+  </main>
+  <footer>
+    <div id="countdown">
+      <div class="animation"></div>
+    </div>
+  </footer>
+  <div class="dialog">
+    <p>通关失败！</p>
+    <button class="again-btn">再来一次</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

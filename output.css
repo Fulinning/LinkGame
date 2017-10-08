@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #333; }
+
+header {
+  height: 12vh;
+  position: relative; }
+  header p {
+    color: #e2e2e2;
+    line-height: 17vh;
+    margin: 0 0 0 16vw;
+    font-size: 2.3vw; }
+  header #toggle-btn {
+    position: absolute;
+    right: 17vw;
+    top: 2.3vw;
+    width: 3vw;
+    height: 3vw;
+    background: url("./img/zangting.png");
+    background-size: cover; }
+    header #toggle-btn:hover {
+      cursor: pointer; }
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 75vh; }
+  main #game-area {
+    display: flex;
+    flex-wrap: wrap; }
+  main .mask {
+    position: fixed;
+    height: 75vh;
+    width: 100vw;
+    top: 12vh;
+    left: 0;
+    background: #333;
+    z-index: 2;
+    display: none; }
+    main .mask p {
+      font-size: 3vw;
+      margin-left: 35vw;
+      margin-top: 25vh;
+      color: #e2e2e2; }
+
+footer {
+  height: 13vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+  footer #countdown {
+    background: #999;
+    height: 5vh;
+    width: 70vw;
+    border-radius: 2vh;
+    padding: 1vh; }
+    footer #countdown div {
+      background: #ec5d5e;
+      height: 100%;
+      border-radius: 1vh; }
+      footer #countdown div.animation {
+        -moz-animation-duration: 60s;
+        -webkit-animation-duration: 60s;
+        animation-duration: 60s;
+        -moz-animation-name: countdown;
+        -webkit-animation-name: countdown;
+        animation-name: countdown; }
+
+.dialog {
+  position: fixed;
+  z-index: 3;
+  background-color: #333;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  color: #e9e9e9;
+  display: none; }
+  .dialog p {
+    font-size: 3vw;
+    text-align: center;
+    margin-top: 30vh;
+    letter-spacing: 5px; }
+  .dialog .again-btn {
+    margin: 5vw 0 0 44vw;
+    font-size: 2vw;
+    background: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 0.8vw 1.2vw;
+    color: #e9e9e9;
+    border: 1px solid #e9e9e9; }
+
+@-moz-keyframes countdown {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+@-webkit-keyframes countdown {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+@keyframes countdown {
+  from {
+    width: 100%; }
+  to {
+    width: 0; } }
+
+/*# sourceMappingURL=output.css.map */
